@@ -1,0 +1,232 @@
+/* BOTÃO MENU */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+    .mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    padding: 15px;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #0d0d0d;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .site-footer .footer-brand, .footer-logo{
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .site-footer .footer-container{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .site-footer .footer-bottom{
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
+
+/* =========================
+   ATÉ 1100px
+========================= */
+@media (max-width: 1100px) {
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-container {
+    gap: 32px;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================
+   ATÉ 900px
+========================= */
+@media (max-width: 900px) {
+  .main-nav {
+    display: none;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .supporters-content {
+    max-width: 100%;
+  }
+
+  .section-heading h2,
+  .supporters-content h2,
+  .final-cta-container h2 {
+    font-size: 2.1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   ATÉ 640px
+========================= */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .logo {
+    height: 34px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-actions .btn {
+    width: 100%;
+  }
+
+  .hero-section,
+  .problem-section,
+  .solution-section,
+  .how-it-works-section,
+  .supporters-section,
+  .importance-section,
+  .roadmap-section,
+  .final-cta-section,
+  .for-who-section,
+  .evaluation-section,
+  .support-section,
+  .process-section,
+  .important-section,
+  .apply-form-section {
+    padding: 72px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-buttons,
+  .supporters-buttons,
+  .final-cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn,
+  .supporters-buttons .btn,
+  .final-cta-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-highlights {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .section-heading h2,
+  .supporters-content h2,
+  .final-cta-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-heading p,
+  .supporters-content p,
+  .final-cta-container p {
+    font-size: 1rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card,
+  .step-card,
+  .roadmap-item {
+    padding: 22px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.88rem;
+  }
+}
